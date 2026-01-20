@@ -10,5 +10,5 @@ export async function POST(req: Request) {
 
   revalidatePath(`/blog/${slug}`);
 
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, slug });
 }
